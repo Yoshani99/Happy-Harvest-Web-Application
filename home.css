@@ -1,0 +1,249 @@
+/* Reset default margin and padding */
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background-image: url(Image/blog1.png);
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+  color: black;
+}
+
+.header p {
+  color: black;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: darkolivegreen;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: left;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #50db05;
+  border-radius: 5px;
+  transform: translateY(10px);
+opacity: 0;
+transition: .5s;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: darkgreen;
+  color: aqua;
+}
+
+.navbar a :hover,
+.navbar a.active {
+  color:  rgb(0, 0, 0);
+}
+
+.navbar a:hover::after {
+  transform: translateY(0);
+opacity: 1;
+}
+
+
+#menu-outline{
+  font-size: 3.6rem;
+color:chartreuse;
+}
+
+.row {
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+}
+
+.side {
+  -ms-flex: 30%; 
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+
+.main {
+  -ms-flex: 70%; 
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  flex: 3;
+}
+
+.footer-logo img {
+  width: 150px;
+}
+
+
+.footer-contact h3,
+.footer-social h3 {
+  margin-bottom: 10px;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+}
+
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-social ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-social ul li:last-child {
+  margin-right: 0;
+}
+
+.footer-social ul li a img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  transition: transform 0.3s ease;
+}
+
+.footer-social ul li a img:hover {
+  transform: scale(1.2);
+}
+
+h3 {
+  color: goldenrod;
+  font-size: 30px;
+}
+
+h4 {
+  color: #ccc;
+}
+
+@media screen and (max-width: 700px) {
+  .row {
+      flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+      float: none;
+      width: 100%;
+  }
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: 20px;
+}
+
+/* Slides */
+.slide {
+  display: none;
+}
+
+/* Slide images */
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+/* Caption text */
+.slide .caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+}
+
+/* Slide numbering */
+.slide .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Dot indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active-dot {
+  background-color: #717171;
+}
+  

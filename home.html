@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HappyHarvest Shop</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HappyHarvest Shop</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-ZbNDqN4Y1YtF4YQXBCUg2Fw4bCnBmT1gsI9Vb5nreZMWyF1hJ/Es5hKzPzVxdnETfWmoWpZIL5ftAV4CfzBv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+    <style>
+        
+    </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <img src="Image/hh.png.png" alt="HappyHarvest Shop Logo" width="150px" height="150px">
+    <h1>HappyHarvest Shop</h1> <br>
+    <p>Welcome to <b>HappyHarvest Shop</b> for choose your best..</p>
+</div>
+
+
+<div class="navbar">
+    <a href="#" class="active">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about us.html">About Us</a>
+    <a href="contact us.html">Contact</a>
+   
+</div>
+
+
+    
+        <div class="main">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Dec 7, 2017</h5>
+            <div class="slideshow-container">
+                <div class="slide">
+                    <img src="accomplishment-adolescent-adult-1448258-1024x683.jpg" alt="Slide 1">
+                    <div class="caption">Caption Text 1</div>
+                </div>
+                <div class="slide">
+                    <img src="shutterstock_658847998.jpg" alt="Slide 2">
+                    <div class="caption">Caption Text 2</div>
+                </div>
+                <div class="slide">
+                    <img src="Faculty-of-computing-student-community-FCSC-2.jpg" alt="Slide 3">
+                    <div class="caption">Caption Text 3</div>
+                </div>
+            </div>
+            <br>
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Sep 2, 2017</h5>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <img src="Image/hh.png.png" alt="Foodshop Logo">
+            </div>
+            <div class="footer-contact">
+                <h3>Happy Harvest Foodshop</h3>
+                <p><strong></strong> 223/4,<br>
+                                    Kalawellawa,<br>
+                                     Mathugama.
+                  </p><br>
+                <p><strong>Phone:</strong> 076-0567844</p><br>
+                <p><strong>Email:</strong> happyharvestfoodshop@gmail.com.com</p>
+            </div>
+            <div class="footer-social">
+                <h4>Connect With Us</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/happyharvestfoodshop"><img src="Image/3225194_app_facebook_logo_media_popular_icon.png" alt="Facebook"></a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=1234567890"><img src="Image/3225179_app_logo_media_popular_social_icon.png" alt="WhatsApp"></a></li>
+                    <li><a href="mailto:info@happyharvestfoodshop.com"><img src="Image/3225192_app_googleplus_logo_media_popular_icon.png" alt="Gmail"></a></li>
+                    <li><a href="https://www.linkedin.com/company/happyharvestfoodshop"><img src="Image/3225190_app_linkedin_logo_media_popular_icon.png" alt="LinkedIn"></a></li>
+                </ul>
+                
+            </div>
+        </div>
+    </footer>
+      
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var slides = document.getElementsByClassName("slide");
+            var dots = document.getElementsByClassName("dot");
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            for (var i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active-dot", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active-dot";
+            setTimeout(showSlides, 2000); // Change slide every 2 seconds
+        }
+    </script>
+
+</body>
+
+</html>
